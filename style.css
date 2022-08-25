@@ -8,7 +8,11 @@
 }
 
 .second {
-  padding: 10px 0 20px;
+  padding: 5px 0 10px;
+  color: #ffffff !important;
+}
+.first {
+  color: #ffffff !important;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -73,8 +77,17 @@ li a:hover {
   color: white;
 }
 .hello {
-  font-size: 30px;
+  font-size: 3rem;
+  margin-bottom: 20px;
   line-height: 3rem;
+  color: #ffffff;
+}
+#contact > p,
+#contact > a {
+  color: #ffffff !important;
+}
+#btnsss {
+  margin-top: 1.5rem;
 }
 .image {
   width: 40%;
@@ -363,4 +376,10 @@ li a:hover {
 }
 section#about {
   color: white;
+}
+
+@media screen and (max-width: 550px) {
+  .btND {
+    margin-left: 0px;
+  }
 }
