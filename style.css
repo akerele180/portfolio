@@ -360,6 +360,7 @@ li a:hover {
 }
 .btNH {
   background: #c39d76;
+  border: 1px solid #c39d76;
 }
 .btNH a {
   color: initial;
