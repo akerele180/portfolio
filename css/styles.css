@@ -307,7 +307,6 @@ body::after {
   text-transform: uppercase;
   font-size: clamp(1.6rem, 7.4vw, 3.1rem);
   line-height: 1.2;
-  white-space: nowrap;
   padding: .5rem 0;
   border-bottom: 1px solid var(--line-soft)
 }
@@ -1662,7 +1661,7 @@ footer b {
   }
 
   .mobile-menu a {
-    font-size: clamp(1.5rem, 8.4vw, 2.4rem)
+    font-size: clamp(1.3rem, 6vw, 2rem)
   }
 
   .caps-grid {
