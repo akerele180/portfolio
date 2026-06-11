@@ -1,3 +1,8 @@
+/* ============================================
+   Tosin J. Akerele — Portfolio
+   Main script (requires gsap + ScrollTrigger)
+   ============================================ */
+
 (function(){
   "use strict";
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -18,6 +23,48 @@
     } catch(e) { clock.textContent = new Date().toLocaleTimeString(); }
   }
   tickClock(); setInterval(tickClock, 1000);
+
+  /* ---------- inquiry form ---------- */
+  var form = document.getElementById("inquiryForm");
+  if (form) {
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      var status = document.getElementById("formStatus");
+      var btn = form.querySelector(".btn-send");
+      if (!form.checkValidity()) {
+        status.textContent = "Please fill in your name, email, and project details.";
+        form.reportValidity && form.reportValidity();
+        return;
+      }
+      var data = new FormData(form);
+      btn.disabled = true;
+      status.textContent = "Sending\u2026";
+      /* Works automatically once deployed on Netlify (Netlify Forms).
+         Anywhere else, falls back to opening the visitor's email app prefilled. */
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(data).toString()
+      }).then(function(r){
+        if (!r.ok) throw new Error("non-200");
+        status.textContent = "Sent \u2014 I'll reply within 24 hours.";
+        form.reset();
+        btn.disabled = false;
+      }).catch(function(){
+        var subject = encodeURIComponent("Project inquiry \u2014 " + (data.get("name") || ""));
+        var body = encodeURIComponent(
+          "Name: " + (data.get("name") || "") +
+          "\nEmail: " + (data.get("email") || "") +
+          "\nProject: " + (data.get("project") || "") +
+          "\nBudget: " + (data.get("budget") || "\u2014") +
+          "\n\n" + (data.get("message") || "")
+        );
+        window.location.href = "mailto:akerele.james1699@gmail.com?subject=" + subject + "&body=" + body;
+        status.textContent = "Opening your email app instead\u2026";
+        btn.disabled = false;
+      });
+    });
+  }
 
   /* ---------- mobile menu ---------- */
   var menuBtn = document.getElementById("menuBtn");
@@ -43,7 +90,7 @@
     for (var i = 0; i < text.length; i++) {
       var s = document.createElement("span");
       s.className = "ch";
-      s.textContent = text[i] === " " ? " " : text[i];
+      s.textContent = text[i] === " " ? "\u00A0" : text[i];
       frag.appendChild(s);
     }
     el.appendChild(frag);
