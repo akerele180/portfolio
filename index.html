@@ -1,362 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Tosin Akerele — Senior Frontend Engineer</title>
-<meta name="description" content="Tosin J. Akerele — Senior Frontend Engineer in Lagos, Nigeria. Building fast, scalable interfaces for products people rely on every day." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tosin Akerele — Senior Frontend Engineer</title>
+  <meta name="description" content="Tosin J. Akerele — Senior Frontend Engineer in Lagos, Nigeria. Building fast, scalable interfaces for products people rely on every day." />
+  <meta name="author" content="Tosin J. Akerele" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://tosinakerele.dev/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tosinakerele.dev/" />
+  <meta property="og:title" content="Tosin Akerele — Senior Frontend Engineer" />
+  <meta property="og:description" content="Tosin J. Akerele — Senior Frontend Engineer in Lagos, Nigeria. Building fast, scalable interfaces for products people rely on every day." />
+  <meta property="og:image" content="https://tosinakerele.dev/images/portrait.jpg" />
+  <meta property="og:site_name" content="Tosin Akerele" />
+  <meta property="og:locale" content="en_NG" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@tosin_jaims" />
+  <meta name="twitter:creator" content="@tosin_jaims" />
+  <meta name="twitter:title" content="Tosin Akerele — Senior Frontend Engineer" />
+  <meta name="twitter:description" content="Tosin J. Akerele — Senior Frontend Engineer in Lagos, Nigeria. Building fast, scalable interfaces for products people rely on every day." />
+  <meta name="twitter:image" content="https://tosinakerele.dev/images/portrait.jpg" />
+
+  <meta name="theme-color" content="#0b0a09" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tosin J. Akerele",
+    "jobTitle": "Senior Frontend Engineer",
+    "url": "https://tosinakerele.dev",
+    "image": "https://tosinakerele.dev/images/portrait.jpg",
+    "email": "akerele.james1699@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lagos",
+      "addressCountry": "NG"
+    },
+    "sameAs": [
+      "https://github.com/akerele180",
+      "https://www.linkedin.com/in/tosinakerele/",
+      "https://twitter.com/tosin_jaims"
+    ],
+    "knowsAbout": ["TypeScript", "React", "Next.js", "Frontend Architecture", "Performance Optimisation", "React Native", "Laravel", "Docker", "Kubernetes"],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Babban Gona"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="/images/AKERELE.jpg" type="image/jpeg" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body class="locked">
 
-<!-- preloader -->
-<div class="loader" id="loader" aria-hidden="true">
-  <div class="loader-bar" id="loaderBar"></div>
-  <div class="loader-count"><span id="loaderNum">000</span><i>%</i></div>
-  <div class="loader-tag">Tosin J. Akerele<br/>Portfolio — ©2026<br/>Lagos, Nigeria</div>
-</div>
-
-<!-- cursor -->
-<div class="cursor" aria-hidden="true">
-  <div class="cursor-ring"></div>
-  <div class="cursor-dot"></div>
-  <div class="cursor-label">View</div>
-</div>
-
-<!-- nav -->
-<header class="nav" id="nav">
-  <a class="brand" href="#top">TOSIN<em>.</em>J</a>
-  <nav class="nav-links" aria-label="Primary">
-    <a href="#about" data-hover>About</a>
-    <a href="#work" data-hover>Work</a>
-    <a href="#experience" data-hover>Experience</a>
-    <a href="#contact" data-hover>Contact</a>
-  </nav>
-  <a class="nav-cta" href="#contact" data-hover data-magnet>Start a project</a>
-  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
-</header>
-
-<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-  <button class="mobile-close" id="menuClose" aria-label="Close menu">Close</button>
-  <a href="#about"><span>01</span>About</a>
-  <a href="#work"><span>02</span>Work</a>
-  <a href="#experience"><span>03</span>Experience</a>
-  <a href="#contact"><span>04</span>Contact</a>
-</div>
-
-<main id="top">
-
-  <!-- HERO -->
-  <section class="hero" style="padding:0">
-    <div class="hero-bg" aria-hidden="true"></div>
-    <div class="hero-stage" id="heroStage">
-      <p class="hero-serif" id="heroSerif">senior frontend engineer</p>
-      <h1 class="hero-name name-back" id="nameBack" aria-label="Tosin">TOSIN</h1>
-      <div class="portrait" id="portrait">
-        <img id="heroImg" src="images/portrait.jpg" alt="Portrait of Tosin J. Akerele" />
-      </div>
-      <h1 class="hero-name name-front" id="nameFront" aria-label="Akerele">AKERELE</h1>
-      <div class="hero-meta meta-l" id="metaL">
-        Based in <b>Lagos, Nigeria</b><br/>
-        6°27′N — 3°23′E
-      </div>
-      <div class="hero-meta meta-r" id="metaR">
-        Currently <b>Babban Gona</b><br/>
-        Open to <b>remote / hybrid</b>
-      </div>
-      <div class="scroll-cue" aria-hidden="true">Scroll</div>
-    </div>
-  </section>
-
-  <!-- marquees -->
-  <div class="marquees" aria-hidden="true">
-    <div class="mq mq-a">
-      <div class="mq-track">
-        <span>TypeScript</span><span>React</span><span>Next.js</span><span>GSAP</span><span>Redux Toolkit</span><span>Laravel</span><span>Docker</span><span>Kubernetes</span>
-        <span>TypeScript</span><span>React</span><span>Next.js</span><span>GSAP</span><span>Redux Toolkit</span><span>Laravel</span><span>Docker</span><span>Kubernetes</span>
-      </div>
-    </div>
-    <div class="mq mq-b mq--alt">
-      <div class="mq-track">
-        <span>Performance</span><span>Design Systems</span><span>Testing</span><span>CI / CD</span><span>Storybook</span><span>React Native</span><span>Architecture</span><span>PWA</span>
-        <span>Performance</span><span>Design Systems</span><span>Testing</span><span>CI / CD</span><span>Storybook</span><span>React Native</span><span>Architecture</span><span>PWA</span>
-      </div>
-    </div>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-bar" id="loaderBar"></div>
+    <div class="loader-count"><span id="loaderNum">000</span><i>%</i></div>
+    <div class="loader-tag">Tosin J. Akerele<br />Portfolio — ©2026<br />Lagos, Nigeria</div>
   </div>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="sec-head">
-      <div>
-        <span class="sec-label reveal">01 — About</span>
-        <h2 class="sec-title" data-split>Architecture with <em>measurable</em> outcomes</h2>
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor-ring"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-label">View</div>
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top">TOSIN<em>.</em>J</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about" data-hover>About</a>
+      <a href="#work" data-hover>Work</a>
+      <a href="#experience" data-hover>Experience</a>
+      <a href="#contact" data-hover>Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact" data-hover data-magnet>Start a project</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <button class="mobile-close" id="menuClose" aria-label="Close menu">Close</button>
+    <a href="#about"><span>01</span>About</a>
+    <a href="#work"><span>02</span>Work</a>
+    <a href="#experience"><span>03</span>Experience</a>
+    <a href="#contact"><span>04</span>Contact</a>
+  </div>
+
+  <main id="top">
+
+    <section class="hero" style="padding:0">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-stage" id="heroStage">
+        <p class="hero-serif" id="heroSerif">senior frontend engineer</p>
+        <h1 class="hero-name name-back" id="nameBack" aria-label="Tosin">TOSIN</h1>
+        <div class="portrait" id="portrait">
+          <img id="heroImg" src="images/portrait.jpg" alt="Portrait of Tosin J. Akerele" width="400" height="600" fetchpriority="high" />
+        </div>
+        <h1 class="hero-name name-front" id="nameFront" aria-label="Akerele">AKERELE</h1>
+        <div class="hero-meta meta-l" id="metaL">
+          Based in <b>Lagos, Nigeria</b><br />
+          6°27′N — 3°23′E
+        </div>
+        <div class="hero-meta meta-r" id="metaR">
+          Currently <b>Babban Gona</b><br />
+          Open to <b>remote / hybrid</b>
+        </div>
+        <div class="scroll-cue" aria-hidden="true">Scroll</div>
       </div>
-      <p class="sec-note reveal">EST. 2018 · LAGOS</p>
-    </div>
-    <div class="about-grid">
-      <div class="about-photo" id="aboutPhoto">
-        <img id="aboutImg" alt="Tosin J. Akerele" />
-        <span class="ph-frame"></span>
-        <span class="ph-tag">Tosin J. Akerele — Lagos, 2026</span>
+    </section>
+
+    <div class="marquees" aria-hidden="true">
+      <div class="mq mq-a">
+        <div class="mq-track">
+          <span>TypeScript</span><span>React</span><span>Next.js</span><span>GSAP</span><span>Redux Toolkit</span><span>Laravel</span><span>Docker</span><span>Kubernetes</span>
+          <span>TypeScript</span><span>React</span><span>Next.js</span><span>GSAP</span><span>Redux Toolkit</span><span>Laravel</span><span>Docker</span><span>Kubernetes</span>
+        </div>
       </div>
-      <div class="about-copy">
-        <p class="reveal">I design and scale complex web applications — the kind with <strong>10,000+ synced records, multi-step data wizards, and real users who can't afford downtime</strong>.</p>
-        <p class="reveal">At Babban Gona I lead frontend on <span class="accent">AFaaS</span>, an agricultural SaaS platform delivering Power BI–level analytics to 2,000+ farmers daily across Nigeria. Before that, four years at Stransact (RSM Nigeria) shipping products that replaced expensive subscriptions, paper processes, and slow workflows.</p>
-        <p class="reveal">My happy place: turning a vague business requirement into an architecture that's still maintainable two years later.</p>
-        <div class="stats reveal" id="stats">
-          <div class="stat"><div class="stat-num"><span data-count="6">0</span><i>+</i></div><div class="stat-label">Years experience</div></div>
-          <div class="stat"><div class="stat-num"><span data-count="2000">0</span><i>+</i></div><div class="stat-label">Daily AFaaS users</div></div>
-          <div class="stat"><div class="stat-num"><span data-count="80">0</span><i>%</i></div><div class="stat-label">Test coverage led</div></div>
-          <div class="stat"><div class="stat-num"><i>−</i><span data-count="25">0</span><i>%</i></div><div class="stat-label">Bundle size</div></div>
-          <div class="stat"><div class="stat-num"><span data-count="15">0</span><i>+</i></div><div class="stat-label">Modules on my grid</div></div>
-          <div class="stat"><div class="stat-num"><i>−</i><span data-count="50">0</span><i>%</i></div><div class="stat-label">Regression bugs</div></div>
+      <div class="mq mq-b mq--alt">
+        <div class="mq-track">
+          <span>Performance</span><span>Design Systems</span><span>Testing</span><span>CI / CD</span><span>Storybook</span><span>React Native</span><span>Architecture</span><span>PWA</span>
+          <span>Performance</span><span>Design Systems</span><span>Testing</span><span>CI / CD</span><span>Storybook</span><span>React Native</span><span>Architecture</span><span>PWA</span>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- WORK -->
-  <section class="work" id="work">
-    <div class="sec-head">
-      <div>
-        <span class="sec-label reveal">02 — Selected work</span>
-        <h2 class="sec-title" data-split>Products people <em>rely on</em> daily</h2>
-      </div>
-      <p class="sec-note reveal">2020 — 2026</p>
-    </div>
-
-    <article class="project">
-      <div class="p-info">
-        <p class="p-index reveal">P–01 · Babban Gona · 2025—</p>
-        <h3 data-split>AFaaS Dashboard</h3>
-        <p class="reveal">A data-driven dashboard service inside Babban Gona's agricultural SaaS platform. Farmers generate real-time analytical reports from on-farm activities — Power BI–level visualization, built in Next.js.</p>
-        <p class="p-result reveal">2,000+ farmers daily · FCP −1.5s · bundle −25%</p>
-        <ul class="p-tags reveal"><li>Next.js</li><li>TypeScript</li><li>Redux</li><li>Docker</li><li>Kubernetes</li></ul>
-      </div>
-      <div class="p-visual v-afaas" data-view aria-hidden="true">
-        <!-- Have a real screenshot? Uncomment the line below and set the path — the miniature hides automatically:
-        <img class="p-shot" src="images/afaas-dashboard.jpg" alt="AFaaS analytics dashboard" loading="lazy" />
-        -->
-        <div class="mini mini-dash">
-          <div class="row"><span class="dot"></span><span class="lbl"></span></div>
-          <div class="bars"><i></i><i></i><i></i><i></i><i></i></div>
+    <section id="about">
+      <div class="sec-head">
+        <div>
+          <span class="sec-label reveal">01 — About</span>
+          <h2 class="sec-title" data-split>Architecture with <em>measurable</em> outcomes</h2>
         </div>
+        <p class="sec-note reveal">EST. 2018 · LAGOS</p>
       </div>
-    </article>
-
-    <article class="project">
-      <div class="p-info">
-        <p class="p-index reveal">P–02 · Stransact · 2022—2025</p>
-        <h3 data-split>TimeX</h3>
-        <p class="reveal">A time &amp; expense tracker I led from internal tool to multi-tenant SaaS. Replaced the company's Zoho stack entirely and became the backbone of productivity reporting.</p>
-        <p class="p-result reveal">Cut subscription costs by 80%+</p>
-        <ul class="p-tags reveal"><li>React</li><li>Laravel</li><li>InertiaJS</li><li>MySQL</li></ul>
-      </div>
-      <div class="p-visual v-timex" data-view aria-hidden="true">
-        <!-- Have a real screenshot? Uncomment the line below and set the path — the miniature hides automatically:
-        <img class="p-shot" src="images/timex.jpg" alt="TimeX time and expense tracker" loading="lazy" />
-        -->
-        <div class="mini mini-timer">
-          <div class="ring"><b>07:42</b></div>
-          <div class="chips"><i></i><i></i><i></i></div>
+      <div class="about-grid">
+        <div class="about-photo" id="aboutPhoto">
+          <img id="aboutImg" alt="Tosin J. Akerele, Senior Frontend Engineer based in Lagos, Nigeria" width="400" height="533" loading="lazy" />
+          <span class="ph-frame"></span>
+          <span class="ph-tag">Tosin J. Akerele — Lagos, 2026</span>
         </div>
-      </div>
-    </article>
-
-    <article class="project">
-      <div class="p-info">
-        <p class="p-index reveal">P–03 · Healthcare · Stransact</p>
-        <h3 data-split>Pboard</h3>
-        <p class="reveal">Critical components for a patient services platform — rebuilt the appointment flow so booking went from a five-minute chore to an under-two-minute task.</p>
-        <p class="p-result reveal">Booking time: 5 min → under 2 min</p>
-        <ul class="p-tags reveal"><li>React</li><li>Laravel</li><li>REST APIs</li></ul>
-      </div>
-      <div class="p-visual v-pboard" data-view aria-hidden="true">
-        <!-- Have a real screenshot? Uncomment the line below and set the path — the miniature hides automatically:
-        <img class="p-shot" src="images/pboard.jpg" alt="Pboard healthcare platform" loading="lazy" />
-        -->
-        <div class="mini mini-cal">
-          <i></i><i class="on"></i><i></i><i></i>
-          <i></i><i></i><i class="hot"></i><i></i>
-          <i class="on"></i><i></i><i></i><i></i>
-        </div>
-      </div>
-    </article>
-
-    <article class="project">
-      <div class="p-info">
-        <p class="p-index reveal">P–04 · One Purse Inc. · 2024</p>
-        <h3 data-split>Showa Commerce</h3>
-        <p class="reveal">Web storefront and full admin console for a US e-commerce product — built end-to-end as the sole frontend engineer, working remotely from Lagos with a distributed team.</p>
-        <p class="p-result reveal">Solo frontend build · web + admin</p>
-        <ul class="p-tags reveal"><li>Next.js</li><li>Laravel</li><li>CRUD at scale</li></ul>
-      </div>
-      <div class="p-visual v-showa" data-view aria-hidden="true">
-        <!-- Have a real screenshot? Uncomment the line below and set the path — the miniature hides automatically:
-        <img class="p-shot" src="images/showa.jpg" alt="Showa e-commerce storefront" loading="lazy" />
-        -->
-        <div class="mini mini-shop">
-          <div class="card"><div class="ph"></div><div class="l"></div><div class="l"></div></div>
-          <div class="card"><div class="ph"></div><div class="l"></div><div class="l"></div></div>
-          <div class="card"><div class="ph"></div><div class="l"></div><div class="l"></div></div>
-        </div>
-      </div>
-    </article>
-
-    <article class="project">
-      <div class="p-info">
-        <p class="p-index reveal">P–05 · Personal · 2026</p>
-        <h3 data-split>Clipboard Sync</h3>
-        <p class="reveal">An Apple-ecosystem-style universal clipboard, except it works on Windows too. A Next.js PWA that shares text across all my devices instantly — built because the feature I wanted didn't exist.</p>
-        <p class="p-result reveal">Cross-platform PWA · real-time sync</p>
-        <ul class="p-tags reveal"><li>Next.js</li><li>PWA</li><li>WebSockets</li></ul>
-      </div>
-      <div class="p-visual v-sync" data-view aria-hidden="true">
-        <!-- Have a real screenshot? Uncomment the line below and set the path — the miniature hides automatically:
-        <img class="p-shot" src="images/clipboard-sync.jpg" alt="Clipboard Sync app" loading="lazy" />
-        -->
-        <div class="mini mini-sync">
-          <div class="device lap"><div class="l"></div><div class="l c"></div><div class="l" style="width:60%"></div></div>
-          <span class="sync-arrow">⇄</span>
-          <div class="device mob"><div class="l"></div><div class="l c"></div></div>
-        </div>
-      </div>
-    </article>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="sec-head">
-      <div>
-        <span class="sec-label reveal">03 — Experience</span>
-        <h2 class="sec-title" data-split>Where I've <em>shipped</em></h2>
-      </div>
-      <p class="sec-note reveal">FULL CV ON REQUEST</p>
-    </div>
-    <div class="xp-list">
-      <div class="xp now reveal">
-        <span class="xp-when">2025 — Now</span>
-        <span class="xp-co">Babban Gona<small>Agritech · SaaS</small></span>
-        <span class="xp-role">Senior Frontend Engineer</span>
-        <span class="xp-loc">Lagos · Hybrid</span>
-      </div>
-      <div class="xp reveal">
-        <span class="xp-when">2021 — 2025</span>
-        <span class="xp-co">Stransact<small>RSM International · Nigeria</small></span>
-        <span class="xp-role">Mid-Level Frontend Engineer — grew from Graduate Intern</span>
-        <span class="xp-loc">Lagos · Hybrid</span>
-      </div>
-      <div class="xp reveal">
-        <span class="xp-when">2024</span>
-        <span class="xp-co">One Purse Inc.<small>E-commerce / Fintech</small></span>
-        <span class="xp-role">Frontend Engineer</span>
-        <span class="xp-loc">Charlotte, US · Remote</span>
-      </div>
-      <div class="xp reveal">
-        <span class="xp-when">2020</span>
-        <span class="xp-co">Wave Africa<small>Fintech · Lending</small></span>
-        <span class="xp-role">Frontend Engineer — +50% app performance, +40% deploy frequency</span>
-        <span class="xp-loc">Lagos · Remote</span>
-      </div>
-      <div class="xp reveal">
-        <span class="xp-when">2018 — 2019</span>
-        <span class="xp-co">Uleval Technology<small>Agency</small></span>
-        <span class="xp-role">Frontend Engineer, Internship</span>
-        <span class="xp-loc">Lagos · On-site</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- CAPABILITIES -->
-  <section class="caps">
-    <div class="sec-head">
-      <div>
-        <span class="sec-label reveal">04 — Capabilities</span>
-        <h2 class="sec-title" data-split>What I bring to <em>a team</em></h2>
-      </div>
-    </div>
-    <div class="caps-grid">
-      <div class="cap reveal"><span class="glyph">[ ⌬ ]</span><h3>Frontend architecture</h3><p>Polyrepo systems, multi-tenant SaaS, design systems, and component APIs (like AdvancedDataTable) adopted across 15+ modules.</p></div>
-      <div class="cap reveal"><span class="glyph">[ ⚡ ]</span><h3>Performance</h3><p>Code-splitting, bundle analysis, and rendering strategy. −25% bundle size, −1.5s FCP, +50% app performance on past products.</p></div>
-      <div class="cap reveal"><span class="glyph">[ ✓ ]</span><h3>Testing &amp; CI/CD</h3><p>Took coverage from 10% to 80% with Jest + Cypress E2E pipelines, GitHub Actions, and Docker/Kubernetes workflows.</p></div>
-      <div class="cap reveal"><span class="glyph">[ ⇆ ]</span><h3>Full-stack range</h3><p>Comfortable across the line — Laravel, InertiaJS, MySQL, REST APIs — so frontend decisions account for the whole system.</p></div>
-      <div class="cap reveal"><span class="glyph">[ ▢ ]</span><h3>Mobile</h3><p>React Native rebuilds (iPaySuite) and PWA-first thinking for users on unreliable networks.</p></div>
-      <div class="cap reveal"><span class="glyph">[ ✦ ]</span><h3>Team leadership</h3><p>Storybook adoption, code review culture, pair programming, and coding standards that cut review turnaround by 40%.</p></div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <span class="sec-label reveal">05 — Contact</span>
-    <h2 data-split>Let's build <em>something rare</em></h2>
-    <div class="contact-grid">
-      <div class="contact-aside">
-        <p class="lede reveal">Have a product that needs to scale, a dashboard drowning in data, or a frontend that's slower than it should be? Tell me about it — I reply within 24 hours.</p>
-        <a class="direct-mail reveal" href="mailto:akerele.james1699@gmail.com" data-hover>Prefer email?<b>akerele.james1699@gmail.com</b></a>
-        <div class="socials reveal">
-          <a href="https://github.com/akerele180" target="_blank" rel="noopener" data-hover data-magnet>GitHub</a>
-          <a href="https://www.linkedin.com/in/tosinakerele/" target="_blank" rel="noopener" data-hover data-magnet>LinkedIn</a>
-          <a href="https://twitter.com/tosin_jaims" target="_blank" rel="noopener" data-hover data-magnet>X / Twitter</a>
-          <a href="https://wa.me/2348099846538" target="_blank" rel="noopener" data-hover data-magnet>WhatsApp</a>
-        </div>
-      </div>
-      <form class="inquiry" id="inquiryForm" name="inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
-        <input type="hidden" name="form-name" value="inquiry" />
-        <p class="hp" aria-hidden="true"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
-        <div class="f-row reveal">
-          <div class="f-field">
-            <label for="f-name">Your name <i>*</i></label>
-            <input id="f-name" name="name" type="text" placeholder="Ada Obi" required autocomplete="name" />
-          </div>
-          <div class="f-field">
-            <label for="f-email">Email <i>*</i></label>
-            <input id="f-email" name="email" type="email" placeholder="ada@company.com" required autocomplete="email" />
+        <div class="about-copy">
+          <p class="reveal">I design and scale complex web applications — the kind with <strong>10,000+ synced records, multi-step data wizards, and real users who can't afford downtime</strong>.</p>
+          <p class="reveal">At Babban Gona I lead frontend on <span class="accent">AFaaS</span>, an agricultural SaaS platform delivering Power BI–level analytics to 2,000+ farmers daily across Nigeria. Before that, four years at Stransact (RSM Nigeria) shipping products that replaced expensive subscriptions, paper processes, and slow workflows.</p>
+          <p class="reveal">My happy place: turning a vague business requirement into an architecture that's still maintainable two years later.</p>
+          <div class="stats reveal" id="stats">
+            <div class="stat">
+              <div class="stat-num"><span data-count="6">0</span><i>+</i></div>
+              <div class="stat-label">Years experience</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num"><span data-count="2000">0</span><i>+</i></div>
+              <div class="stat-label">Daily AFaaS users</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num"><span data-count="80">0</span><i>%</i></div>
+              <div class="stat-label">Test coverage led</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num"><i>−</i><span data-count="25">0</span><i>%</i></div>
+              <div class="stat-label">Bundle size</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num"><span data-count="15">0</span><i>+</i></div>
+              <div class="stat-label">Modules on my grid</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num"><i>−</i><span data-count="50">0</span><i>%</i></div>
+              <div class="stat-label">Regression bugs</div>
+            </div>
           </div>
         </div>
-        <div class="f-field reveal">
-          <label for="f-project">What are we building?</label>
-          <select id="f-project" name="project">
-            <option value="Web application">Web application</option>
-            <option value="Dashboard / data product">Dashboard / data product</option>
-            <option value="Landing page / marketing site">Landing page / marketing site</option>
-            <option value="Performance rescue">Performance rescue</option>
-            <option value="Something else">Something else</option>
-          </select>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="sec-head">
+        <div>
+          <span class="sec-label reveal">02 — Selected work</span>
+          <h2 class="sec-title" data-split>Products people <em>rely on</em> daily</h2>
         </div>
-        <div class="f-field reveal">
-          <label id="budgetLabel">Budget range</label>
-          <div class="budget" role="radiogroup" aria-labelledby="budgetLabel">
-            <input type="radio" id="b1" name="budget" value="Under $2k" /><label for="b1">Under $2k</label>
-            <input type="radio" id="b2" name="budget" value="$2k – $5k" /><label for="b2">$2k – $5k</label>
-            <input type="radio" id="b3" name="budget" value="$5k – $10k" /><label for="b3">$5k – $10k</label>
-            <input type="radio" id="b4" name="budget" value="$10k+" /><label for="b4">$10k+</label>
+        <p class="sec-note reveal">2020 — 2026</p>
+      </div>
+
+      <article class="project">
+        <div class="p-info">
+          <p class="p-index reveal">P–01 · Babban Gona · 2025—</p>
+          <h3 data-split>AFaaS Dashboard</h3>
+          <p class="reveal">A data-driven dashboard service inside Babban Gona's agricultural SaaS platform. Farmers generate real-time analytical reports from on-farm activities — Power BI–level visualization, built in Next.js.</p>
+          <p class="p-result reveal">2,000+ farmers daily · FCP −1.5s · bundle −25%</p>
+          <ul class="p-tags reveal">
+            <li>Next.js</li>
+            <li>TypeScript</li>
+            <li>Redux</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+          </ul>
+        </div>
+        <div class="p-visual v-afaas" data-view aria-hidden="true">
+          <div class="mini mini-dash">
+            <div class="row"><span class="dot"></span><span class="lbl"></span></div>
+            <div class="bars"><i></i><i></i><i></i><i></i><i></i></div>
           </div>
         </div>
-        <div class="f-field reveal">
-          <label for="f-message">Project details <i>*</i></label>
-          <textarea id="f-message" name="message" placeholder="Timeline, goals, links — whatever helps me understand the work." required></textarea>
+      </article>
+
+      <article class="project">
+        <div class="p-info">
+          <p class="p-index reveal">P–02 · Stransact · 2022—2025</p>
+          <h3 data-split>TimeX</h3>
+          <p class="reveal">A time &amp; expense tracker I led from internal tool to multi-tenant SaaS. Replaced the company's Zoho stack entirely and became the backbone of productivity reporting.</p>
+          <p class="p-result reveal">Cut subscription costs by 80%+</p>
+          <ul class="p-tags reveal">
+            <li>React</li>
+            <li>Laravel</li>
+            <li>InertiaJS</li>
+            <li>MySQL</li>
+          </ul>
         </div>
-        <div class="f-submit reveal">
-          <button class="btn-send" type="submit" data-hover data-magnet>Send inquiry <span class="arr">→</span></button>
-          <span class="f-status" id="formStatus" role="status" aria-live="polite"></span>
+        <div class="p-visual v-timex" data-view aria-hidden="true">
+          <div class="mini mini-timer">
+            <div class="ring"><b>07:42</b></div>
+            <div class="chips"><i></i><i></i><i></i></div>
+          </div>
         </div>
-      </form>
-    </div>
-  </section>
+      </article>
 
-</main>
+      <article class="project">
+        <div class="p-info">
+          <p class="p-index reveal">P–03 · Healthcare · Stransact</p>
+          <h3 data-split>Pboard</h3>
+          <p class="reveal">Critical components for a patient services platform — rebuilt the appointment flow so booking went from a five-minute chore to an under-two-minute task.</p>
+          <p class="p-result reveal">Booking time: 5 min → under 2 min</p>
+          <ul class="p-tags reveal">
+            <li>React</li>
+            <li>Laravel</li>
+            <li>REST APIs</li>
+          </ul>
+        </div>
+        <div class="p-visual v-pboard" data-view aria-hidden="true">
+          <div class="mini mini-cal">
+            <i></i><i class="on"></i><i></i><i></i>
+            <i></i><i></i><i class="hot"></i><i></i>
+            <i class="on"></i><i></i><i></i><i></i>
+          </div>
+        </div>
+      </article>
 
-<footer>
-  <span>© 2026 Tosin J. Akerele</span>
-  <span>Lagos — <b id="clock">--:--:--</b> WAT</span>
-  <span>Designed &amp; built in Lagos, Nigeria</span>
-</footer>
+      <article class="project">
+        <div class="p-info">
+          <p class="p-index reveal">P–04 · One Purse Inc. · 2024</p>
+          <h3 data-split>Showa Commerce</h3>
+          <p class="reveal">Web storefront and full admin console for a US e-commerce product — built end-to-end as the sole frontend engineer, working remotely from Lagos with a distributed team.</p>
+          <p class="p-result reveal">Solo frontend build · web + admin</p>
+          <ul class="p-tags reveal">
+            <li>Next.js</li>
+            <li>Laravel</li>
+            <li>CRUD at scale</li>
+          </ul>
+        </div>
+        <div class="p-visual v-showa" data-view aria-hidden="true">
+          <div class="mini mini-shop">
+            <div class="card">
+              <div class="ph"></div>
+              <div class="l"></div>
+              <div class="l"></div>
+            </div>
+            <div class="card">
+              <div class="ph"></div>
+              <div class="l"></div>
+              <div class="l"></div>
+            </div>
+            <div class="card">
+              <div class="ph"></div>
+              <div class="l"></div>
+              <div class="l"></div>
+            </div>
+          </div>
+        </div>
+      </article>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="js/main.js"></script>
+      <article class="project">
+        <div class="p-info">
+          <p class="p-index reveal">P–05 · Personal · 2026</p>
+          <h3 data-split>Clipboard Sync</h3>
+          <p class="reveal">An Apple-ecosystem-style universal clipboard, except it works on Windows too. A Next.js PWA that shares text across all my devices instantly — built because the feature I wanted didn't exist.</p>
+          <p class="p-result reveal">Cross-platform PWA · real-time sync</p>
+          <ul class="p-tags reveal">
+            <li>Next.js</li>
+            <li>PWA</li>
+            <li>WebSockets</li>
+          </ul>
+        </div>
+        <div class="p-visual v-sync" data-view aria-hidden="true">
+          <div class="mini mini-sync">
+            <div class="device lap">
+              <div class="l"></div>
+              <div class="l c"></div>
+              <div class="l" style="width:60%"></div>
+            </div>
+            <span class="sync-arrow">⇄</span>
+            <div class="device mob">
+              <div class="l"></div>
+              <div class="l c"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience">
+      <div class="sec-head">
+        <div>
+          <span class="sec-label reveal">03 — Experience</span>
+          <h2 class="sec-title" data-split>Where I've <em>shipped</em></h2>
+        </div>
+        <p class="sec-note reveal">FULL CV ON REQUEST</p>
+      </div>
+      <div class="xp-list">
+        <div class="xp now reveal">
+          <span class="xp-when">2025 — Now</span>
+          <span class="xp-co">Babban Gona<small>Agritech · SaaS</small></span>
+          <span class="xp-role">Senior Frontend Engineer</span>
+          <span class="xp-loc">Lagos · Hybrid</span>
+        </div>
+        <div class="xp reveal">
+          <span class="xp-when">2021 — 2025</span>
+          <span class="xp-co">Stransact<small>RSM International · Nigeria</small></span>
+          <span class="xp-role">Mid-Level Frontend Engineer — grew from Graduate Intern</span>
+          <span class="xp-loc">Lagos · Hybrid</span>
+        </div>
+        <div class="xp reveal">
+          <span class="xp-when">2024</span>
+          <span class="xp-co">One Purse Inc.<small>E-commerce / Fintech</small></span>
+          <span class="xp-role">Frontend Engineer</span>
+          <span class="xp-loc">Charlotte, US · Remote</span>
+        </div>
+        <div class="xp reveal">
+          <span class="xp-when">2020</span>
+          <span class="xp-co">Wave Africa<small>Fintech · Lending</small></span>
+          <span class="xp-role">Frontend Engineer — +50% app performance, +40% deploy frequency</span>
+          <span class="xp-loc">Lagos · Remote</span>
+        </div>
+        <div class="xp reveal">
+          <span class="xp-when">2018 — 2019</span>
+          <span class="xp-co">Uleval Technology<small>Agency</small></span>
+          <span class="xp-role">Frontend Engineer, Internship</span>
+          <span class="xp-loc">Lagos · On-site</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="caps">
+      <div class="sec-head">
+        <div>
+          <span class="sec-label reveal">04 — Capabilities</span>
+          <h2 class="sec-title" data-split>What I bring to <em>a team</em></h2>
+        </div>
+      </div>
+      <div class="caps-grid">
+        <div class="cap reveal"><span class="glyph">[ ⌬ ]</span>
+          <h3>Frontend architecture</h3>
+          <p>Polyrepo systems, multi-tenant SaaS, design systems, and component APIs (like AdvancedDataTable) adopted across 15+ modules.</p>
+        </div>
+        <div class="cap reveal"><span class="glyph">[ ⚡ ]</span>
+          <h3>Performance</h3>
+          <p>Code-splitting, bundle analysis, and rendering strategy. −25% bundle size, −1.5s FCP, +50% app performance on past products.</p>
+        </div>
+        <div class="cap reveal"><span class="glyph">[ ✓ ]</span>
+          <h3>Testing &amp; CI/CD</h3>
+          <p>Took coverage from 10% to 80% with Jest + Cypress E2E pipelines, GitHub Actions, and Docker/Kubernetes workflows.</p>
+        </div>
+        <div class="cap reveal"><span class="glyph">[ ⇆ ]</span>
+          <h3>Full-stack range</h3>
+          <p>Comfortable across the line — Laravel, InertiaJS, MySQL, REST APIs — so frontend decisions account for the whole system.</p>
+        </div>
+        <div class="cap reveal"><span class="glyph">[ ▢ ]</span>
+          <h3>Mobile</h3>
+          <p>React Native rebuilds (iPaySuite) and PWA-first thinking for users on unreliable networks.</p>
+        </div>
+        <div class="cap reveal"><span class="glyph">[ ✦ ]</span>
+          <h3>Team leadership</h3>
+          <p>Storybook adoption, code review culture, pair programming, and coding standards that cut review turnaround by 40%.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <span class="sec-label reveal">05 — Contact</span>
+      <h2 data-split>Let's build <em>something rare</em></h2>
+      <div class="contact-grid">
+        <div class="contact-aside">
+          <p class="lede reveal">Have a product that needs to scale, a dashboard drowning in data, or a frontend that's slower than it should be? Tell me about it — I reply within 24 hours.</p>
+          <a class="direct-mail reveal" href="mailto:akerele.james1699@gmail.com" data-hover>Prefer email?<b>akerele.james1699@gmail.com</b></a>
+          <div class="socials reveal">
+            <a href="https://github.com/akerele180" target="_blank" rel="noopener noreferrer" data-hover data-magnet>GitHub</a>
+            <a href="https://www.linkedin.com/in/tosinakerele/" target="_blank" rel="noopener noreferrer" data-hover data-magnet>LinkedIn</a>
+            <a href="https://twitter.com/tosin_jaims" target="_blank" rel="noopener noreferrer" data-hover data-magnet>X / Twitter</a>
+            <a href="https://wa.me/2348099846538" target="_blank" rel="noopener noreferrer" data-hover data-magnet>WhatsApp</a>
+          </div>
+        </div>
+        <form class="inquiry" id="inquiryForm" name="inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+          <input type="hidden" name="form-name" value="inquiry" />
+          <p class="hp" aria-hidden="true"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+          <div class="f-row reveal">
+            <div class="f-field">
+              <label for="f-name">Your name <i>*</i></label>
+              <input id="f-name" name="name" type="text" placeholder="Ada Obi" required autocomplete="name" />
+            </div>
+            <div class="f-field">
+              <label for="f-email">Email <i>*</i></label>
+              <input id="f-email" name="email" type="email" placeholder="ada@company.com" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="f-field reveal">
+            <label for="f-project">What are we building?</label>
+            <select id="f-project" name="project">
+              <option value="Web application">Web application</option>
+              <option value="Dashboard / data product">Dashboard / data product</option>
+              <option value="Landing page / marketing site">Landing page / marketing site</option>
+              <option value="Performance rescue">Performance rescue</option>
+              <option value="Something else">Something else</option>
+            </select>
+          </div>
+          <div class="f-field reveal">
+            <label id="budgetLabel">Budget range</label>
+            <div class="budget" role="radiogroup" aria-labelledby="budgetLabel">
+              <input type="radio" id="b1" name="budget" value="Under $2k" /><label for="b1">Under $2k</label>
+              <input type="radio" id="b2" name="budget" value="$2k – $5k" /><label for="b2">$2k – $5k</label>
+              <input type="radio" id="b3" name="budget" value="$5k – $10k" /><label for="b3">$5k – $10k</label>
+              <input type="radio" id="b4" name="budget" value="$10k+" /><label for="b4">$10k+</label>
+            </div>
+          </div>
+          <div class="f-field reveal">
+            <label for="f-message">Project details <i>*</i></label>
+            <textarea id="f-message" name="message" placeholder="Timeline, goals, links — whatever helps me understand the work." required></textarea>
+          </div>
+          <div class="f-submit reveal">
+            <button class="btn-send" type="submit" data-hover data-magnet>Send inquiry <span class="arr">→</span></button>
+            <span class="f-status" id="formStatus" role="status" aria-live="polite"></span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>© 2026 Tosin J. Akerele</span>
+    <span>Lagos — <b id="clock">--:--:--</b> WAT</span>
+    <span>Designed &amp; built in Lagos, Nigeria</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
